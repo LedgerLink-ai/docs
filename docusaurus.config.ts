@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'LedgerLink AI Docs',
-  tagline: 'Documentation for LedgerLink AI',
-  favicon: 'img/favicon.ico',
+  title: 'LedgerLink.ai Docs',
+  tagline: 'Documentation for LedgerLink.ai',
+  favicon: 'img/ledgerlink-favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://ledgerlink-ai.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -73,9 +73,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'LedgerLink AI Docs',
+      title: 'LedgerLink.ai Docs',
       logo: {
-        alt: 'LedgerLink AI Logo',
+        alt: 'LedgerLink.ai Logo',
         src: 'img/ledgerlink-logo.svg',
       },
       items: [
@@ -83,7 +83,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -101,24 +101,28 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/intro',
+              to: '/docs/intro',
             },
           ],
         },
         {
           title: 'Community',
           items: [
+            // {
+            //   label: 'Stack Overflow',
+            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            // },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/company/ledgerlink-ai',
             },
             {
               label: 'X',
-              href: 'https://x.com/docusaurus',
+              href: 'https://twitter.com/ledgerlinkai',
             },
           ],
         },
@@ -136,7 +140,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} LedgerLink AI. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} LedgerLink Corporation. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
