@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'LedgerLink.ai Docs',
-  tagline: 'Documentation for LedgerLink.ai',
+  title: 'Ledgerlink.ai Developer Documentation',
+  tagline: 'Documentation for Ledgerlink.ai',
   favicon: 'img/ledgerlink-favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -73,7 +73,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'LedgerLink.ai Docs',
+      title: 'Ledgerlink.ai Developer',
       logo: {
         alt: 'LedgerLink.ai Logo',
         src: 'img/ledgerlink-logo.svg',
