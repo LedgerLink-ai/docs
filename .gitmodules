@@ -1,0 +1,4 @@
+[submodule "external_docs/rails_services"]
+	path = external_docs/rails_services
+	url = https://github.com/LedgerLink-ai/rails_services.git
+	branch = docs/public_docs

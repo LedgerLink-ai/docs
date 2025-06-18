@@ -46,6 +46,9 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ledgerlink-ai/docs/tree/main/',
+          // Configure for better symbolic link handling
+          include: ['**/*.{md,mdx}'],
+          exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}'],
         },
         blog: {
           showReadingTime: true,
@@ -67,6 +70,21 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  plugins: [
+    function customWebpackPlugin() {
+      return {
+        name: 'custom-webpack-plugin',
+        configureWebpack(config, isServer, utils) {
+          return {
+            resolve: {
+              symlinks: false,
+            },
+          };
+        },
+      };
+    },
   ],
 
   themeConfig: {
