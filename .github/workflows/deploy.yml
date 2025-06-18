@@ -23,6 +23,44 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: recursive
+          
+      - name: Initialize and update submodules
+        run: |
+          git submodule update --init --recursive
+          
+      - name: Verify submodules and symlinks
+        run: |
+          echo "=== Checking submodules ==="
+          git submodule status
+          echo "=== Checking external_docs directory ==="
+          ls -la external_docs/
+          echo "=== Checking docs/rails/services symlink ==="
+          ls -la docs/rails/
+          echo "=== Verifying symlink target exists ==="
+          if [ -L "docs/rails/services" ]; then
+            echo "docs/rails/services is a symbolic link"
+            target=$(readlink docs/rails/services)
+            echo "Symlink points to: $target"
+            if [ -d "docs/rails/services" ]; then
+              echo "✓ Symlink target is accessible"
+              ls -la docs/rails/services/ | head -5
+            else
+              echo "✗ Symlink target is NOT accessible"
+            fi
+          else
+            echo "docs/rails/services is not a symbolic link"
+            echo "=== Creating symbolic link ==="
+            if [ -d "external_docs/rails_services/docs" ]; then
+              ln -s ../../external_docs/rails_services/docs docs/rails/services
+              echo "✓ Created symbolic link: docs/rails/services -> ../../external_docs/rails_services/docs"
+              ls -la docs/rails/services/ | head -5
+            else
+              echo "✗ Cannot create symlink: external_docs/rails_services/docs does not exist"
+              exit 1
+            fi
+          fi
+
       - uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -32,6 +70,24 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
+        
+      - name: Verify build includes symlinked content
+        run: |
+          echo "=== Checking if build includes rails services docs ==="
+          find build/docs/rails/services -type f | head -10
+          echo "=== Verifying specific documentation files ==="
+          if [ -f "build/docs/rails/services/index.html" ]; then
+            echo "✓ Services index page found in build"
+          else
+            echo "✗ Services index page NOT found in build"
+          fi
+          if [ -f "build/docs/rails/services/getting-started/index.html" ]; then
+            echo "✓ Getting started page found in build"
+          else
+            echo "✗ Getting started page NOT found in build"
+          fi
+          echo "=== Total services documentation files built: ==="
+          find build/docs/rails/services -type f | wc -l
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
