@@ -14,8 +14,10 @@ LedgerLink is a comprehensive solution for integrating digital assets into tradi
 
 Our platform consists of three main components, each designed to address specific aspects of digital asset integration:
 
-### 🚄 [The Rails](./rails/)
+### The Rails
 Secure, scalable infrastructure to manage and transact digital assets including stablecoins, tokenized securities, and cryptocurrencies.
+
+[Explore The Rails →](./rails/)
 
 **Key Features:**
 - Enterprise-grade security and encryption
@@ -23,8 +25,10 @@ Secure, scalable infrastructure to manage and transact digital assets including 
 - Regulatory compliance built-in
 - Real-time monitoring and alerting
 
-### 🔗 [The Link](./link/)
+### The Link
 A flexible integration fabric connecting digital assets with legacy systems, tailored to seamlessly integrate with your existing infrastructure.
+
+[Explore The Link →](./link/)
 
 **Key Features:**
 - Legacy system connectivity
@@ -32,8 +36,10 @@ A flexible integration fabric connecting digital assets with legacy systems, tai
 - Custom middleware solutions
 - Real-time data synchronization
 
-### ⚡ [The Engine](./engine/)
+### The Engine
 Real-time analytics and settlement engine for 24/7 asset movement with AI-powered tools for liquidity management and risk assessment.
+
+[Explore The Engine →](./engine/)
 
 **Key Features:**
 - Real-time settlement processing
@@ -46,18 +52,8 @@ Real-time analytics and settlement engine for 24/7 asset movement with AI-powere
 Choose the component that best fits your integration needs:
 
 - **Financial Institutions**: Start with [The Rails](./rails/) for secure digital asset infrastructure
-- **System Integrators**: Begin with [The Link](./link/) for legacy system connectivity
-- **Analytics & Trading**: Explore [The Engine](./engine/) for real-time processing and analytics
-
-## Documentation Status
-
-We're currently preparing comprehensive documentation for each platform component. Our technical writing team is working to provide:
-
-- **API Reference**: Complete API documentation with examples
-- **Getting Started Guides**: Step-by-step integration tutorials
-- **Best Practices**: Industry-standard implementation patterns
-- **Use Case Examples**: Real-world integration scenarios
-- **Troubleshooting**: Common issues and solutions
+- **System Integrators**: Begin with [The Link](./link/) for legacy system connectivity  
+- **Analytics & Trading Platforms**: Explore [The Engine](./engine/) for real-time processing and analytics
 
 ## Support & Contact
 

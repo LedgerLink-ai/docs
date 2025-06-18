@@ -63,7 +63,7 @@ Our documentation team is developing comprehensive resources for The Engine plat
 
 ### 🔄 Integration & APIs
 - Real-time data streaming APIs
-- Webhook configuration and management
+- Event monitoring and polling
 - Third-party system integrations
 
 ### 🛡️ Security & Compliance
@@ -82,4 +82,4 @@ For enterprise-level implementation support or to discuss custom analytics requi
 
 ---
 
-*Last updated: June 17, 2025*
+*Last updated: June 18, 2025*

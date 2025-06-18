@@ -18,29 +18,44 @@ The Rails provides the foundational infrastructure layer for LedgerLink's digita
 - **Regulatory Compliance**: Built-in compliance with financial regulations
 - **Real-time Monitoring**: Continuous transaction and system monitoring
 
-## What's Coming
+## Documentation
 
-We're actively developing comprehensive documentation for The Rails platform. The upcoming documentation will include:
+The Rails platform provides comprehensive guidance for integration and development:
 
-### 📚 Getting Started
-- Platform overview and architecture
-- System requirements and prerequisites
-- Initial setup and configuration guides
+### 🚀 [Services API](./services/)
+Complete API documentation and integration guides for The Rails platform services.
 
-### 🔧 Integration Guides
-- API reference and endpoints
-- SDK documentation and examples
-- Authentication and security protocols
+**Includes:**
+- **[Getting Started Guide](./services/getting-started.md)** - Authentication, setup, and first API calls
+- **[Complete API Reference](./services/api-reference/index.md)** - All endpoints with examples
+- **[Error Handling](./services/error-handling.md)** - Comprehensive error management
+- **[FAQ](./services/faq.md)** - Common questions and solutions
 
-### 💼 Use Cases
-- Stablecoin payment processing
-- Digital asset custody solutions
-- Institutional trading workflows
+### 🔐 [Gate Security Layer](./gate.md)
+Secure API gateway and access control layer for The Rails platform.
 
-## Stay Updated
+**Coming Soon:**
+- Authentication and authorization guides
+- Security policy configuration
+- Deployment and monitoring documentation
 
-Check back soon for detailed documentation, or [contact our team](https://ledgerlink.ai/contact) for early access to specific features and integration support.
+## Integration Guide
+
+To integrate with The Rails platform:
+
+1. **[Review the Services Overview](./services/)** - Understand the platform architecture
+2. **[Get Started with APIs](./services/getting-started.md)** - Set up authentication and make your first calls
+3. **[Explore API Reference](./services/api-reference/index.md)** - Find the endpoints you need
+4. **[Learn about Security](./gate.md)** - Understand the upcoming Gate security layer
+
+## Support
+
+For technical assistance during your integration:
+
+- **Documentation**: Browse our comprehensive guides above
+- **Technical Support**: [Contact our development team](https://ledgerlink.ai/contact)
+- **Integration Consulting**: [Speak with our solutions team](https://ledgerlink.ai/contact)
 
 ---
 
-*Last updated: June 17, 2025*
+*Last updated: June 18, 2025*
