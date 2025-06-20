@@ -76,7 +76,7 @@ export default function Home(): ReactNode {
         {/* Platform Overview */}
         <div style={{ padding: '4rem 2rem', backgroundColor: '#f8f9fa' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem' }}>
+            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem', color: '#000000' }}>
               Platform Overview
             </h2>
             <div style={{ 
@@ -90,8 +90,8 @@ export default function Home(): ReactNode {
                 borderRadius: '8px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ color: '#667eea', marginBottom: '1rem' }}>The Rails</h3>
-                <p>Secure, scalable infrastructure to manage and transact digital assets including stablecoins, tokenized securities, and cryptocurrencies.</p>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>The Rails</h3>
+                <p style={{ color: '#000000' }}>Secure, scalable infrastructure to manage and transact digital assets including stablecoins, tokenized securities, and cryptocurrencies.</p>
               </div>
               <div style={{ 
                 backgroundColor: 'white', 
@@ -99,8 +99,8 @@ export default function Home(): ReactNode {
                 borderRadius: '8px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ color: '#667eea', marginBottom: '1rem' }}>The Link</h3>
-                <p>A flexible integration fabric connecting digital assets with legacy systems, tailored to seamlessly integrate with your existing infrastructure.</p>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>The Link</h3>
+                <p style={{ color: '#000000' }}>A flexible integration fabric connecting digital assets with legacy systems, tailored to seamlessly integrate with your existing infrastructure.</p>
               </div>
               <div style={{ 
                 backgroundColor: 'white', 
@@ -108,8 +108,8 @@ export default function Home(): ReactNode {
                 borderRadius: '8px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ color: '#667eea', marginBottom: '1rem' }}>The Engine</h3>
-                <p>Real-time analytics and settlement engine for 24/7 asset movement with AI-powered tools for liquidity management and risk assessment.</p>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>The Engine</h3>
+                <p style={{ color: '#000000' }}>Real-time analytics and settlement engine for 24/7 asset movement with AI-powered tools for liquidity management and risk assessment.</p>
               </div>
             </div>
           </div>
@@ -127,19 +127,19 @@ export default function Home(): ReactNode {
               gap: '2rem' 
             }}>
               <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#333', marginBottom: '1rem' }}>🏦 Financial Institution Ready</h3>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>🏦 Financial Institution Ready</h3>
                 <p>Access stablecoins for instant transfers, offer crypto services, and enable smart contracts with regulatory compliance built-in.</p>
               </div>
               <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#333', marginBottom: '1rem' }}>🔗 Blockchain Developer Friendly</h3>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>🔗 Blockchain Developer Friendly</h3>
                 <p>Connect your blockchain, dApp, or DAO directly to the institutional financial system through our integration layer.</p>
               </div>
               <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#333', marginBottom: '1rem' }}>🛡️ Security & Compliance</h3>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>🛡️ Security & Compliance</h3>
                 <p>Built with compliance across U.S. and E.U. jurisdictions, supporting ISO 20022 standards and AML/KYC protocols.</p>
               </div>
               <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#333', marginBottom: '1rem' }}>⚡ Real-time Processing</h3>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>⚡ Real-time Processing</h3>
                 <p>24/7 asset movement capabilities with real-time analytics, settlement, and around-the-clock operational support.</p>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function Home(): ReactNode {
         {/* Use Cases */}
         <div style={{ padding: '4rem 2rem', backgroundColor: '#f8f9fa' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem' }}>
+            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem', color: '#000000' }}>
               Use Cases
             </h2>
             <div style={{ 
@@ -163,8 +163,8 @@ export default function Home(): ReactNode {
                 borderRadius: '8px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ color: '#667eea', marginBottom: '1rem' }}>💰 Stablecoins</h3>
-                <p>Enable instant international transfer and settlement with minimal costs, increasing margins and global efficiency for financial institutions.</p>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>💰 Stablecoins</h3>
+                <p style={{ color: '#000000' }}>Enable instant international transfer and settlement with minimal costs, increasing margins and global efficiency for financial institutions.</p>
               </div>
               <div style={{ 
                 backgroundColor: 'white', 
@@ -172,8 +172,8 @@ export default function Home(): ReactNode {
                 borderRadius: '8px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ color: '#667eea', marginBottom: '1rem' }}>₿ Cryptocurrency Services</h3>
-                <p>Offer clients Bitcoin, Ethereum, Solana, USDC, smart contracts & more within institutional bank accounts.</p>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>₿ Cryptocurrency Services</h3>
+                <p style={{ color: '#000000' }}>Offer clients Bitcoin, Ethereum, Solana, USDC, smart contracts & more within institutional bank accounts.</p>
               </div>
               <div style={{ 
                 backgroundColor: 'white', 
@@ -181,8 +181,8 @@ export default function Home(): ReactNode {
                 borderRadius: '8px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ color: '#667eea', marginBottom: '1rem' }}>👩‍💻 Developer Integration</h3>
-                <p>Connect your blockchain, DAO, or dApp to the institutional financial system, opening access to participating firms on our platform.</p>
+                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>👩‍💻 Developer Integration</h3>
+                <p style={{ color: '#000000' }}>Connect your blockchain, DAO, or dApp to the institutional financial system, opening access to participating firms on our platform.</p>
               </div>
             </div>
           </div>
