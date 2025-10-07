@@ -68,6 +68,10 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-NF34XVDCDD',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -90,10 +94,6 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
-    gtag: {
-      trackingID: 'G-NF34XVDCDD',
-      anonymizeIP: true,
-    },
     navbar: {
       title: 'Ledgerlink.ai Developer',
       logo: {
