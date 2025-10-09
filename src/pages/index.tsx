@@ -41,7 +41,7 @@ export default function Home(): ReactNode {
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link
-                to="/docs/docs/intro"
+                to="/docs/intro"
                 style={{
                   backgroundColor: 'white',
                   color: '#667eea',
@@ -205,7 +205,7 @@ export default function Home(): ReactNode {
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link
-                to="/docs/docs/intro"
+                to="/docs/intro"
                 style={{
                   backgroundColor: '#667eea',
                   color: 'white',
