@@ -30,34 +30,18 @@ The Link serves as the critical bridge between modern digital asset infrastructu
 - **Multi-Protocol Support**: Ethereum, Bitcoin, Solana, and other networks
 - **Smart Contract Integration**: Automated contract execution and monitoring
 
-## What's Coming
+## Documentation
 
-Our technical documentation team is preparing comprehensive guides for The Link integration fabric:
+### 🚀 Link Services
+Complete API documentation and integration guides for the Link services suite.
 
-### 🚀 Quick Start Guides
-- Integration assessment and planning
-- Environment setup and configuration
-- First integration walkthrough
+**Includes:**
+- **[Getting Started Guides](./services/)** – Pick a service and start integrating
+- **[Service API References](./services/)** – Explore endpoints per service
+- **[Error Handling](./services/)** – Common patterns and responses
+- **[FAQ](./services/)** – Answers to frequent questions
 
-### 🔌 Integration Patterns
-- Common integration scenarios
-- Best practices for legacy system connectivity
-- Error handling and retry mechanisms
-
-### 📡 API Documentation
-- Complete API reference with examples
-- Authentication and authorization guides
-- Rate limiting and usage guidelines
-
-### 🏗️ Architecture Guides
-- System architecture patterns
-- Deployment configurations
-- Security and compliance considerations
-
-### 🔧 Developer Tools
-- SDKs and client libraries
-- Testing and sandbox environments
-- Integration monitoring and debugging
+Explore the full catalog in [Link Services](./services/), including Core, Account Manager, Blockchain Listener, Quote, Router, Tracker, and Verify.
 
 ## Support & Resources
 
@@ -65,4 +49,4 @@ For immediate integration support or to discuss your specific requirements, plea
 
 ---
 
-*Last updated: June 18, 2025*
+*Last updated: January 6, 2026*
