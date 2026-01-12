@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://ledgerlink-ai.github.io',
+  url: 'https://docs.ledgerlink.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -68,6 +68,10 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-NF34XVDCDD',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -88,11 +92,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    colorMode: {
-      defaultMode: 'light',
-      disableSwitch: true,
-      respectPrefersColorScheme: false,
-    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -109,7 +108,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/changelog', label: 'Changelog', position: 'left'},
+         {to: '/changelog', label: 'Changelog', position: 'left'},
         {
           href: 'https://github.com/ledgerlink-ai/docs',
           label: 'GitHub',
@@ -157,7 +156,10 @@ const config: Config = {
               label: 'Blog',
               to: '/blog',
             },
-            { label: 'Changelog', to: '/changelog' },
+            {
+              label: 'Changelog',
+              to: '/changelog',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/ledgerlink-ai/docs',
