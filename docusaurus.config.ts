@@ -92,6 +92,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -108,6 +113,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/changelog', label: 'Changelog', position: 'left'},
         {
           href: 'https://github.com/ledgerlink-ai/docs',
           label: 'GitHub',
@@ -155,6 +161,7 @@ const config: Config = {
               label: 'Blog',
               to: '/blog',
             },
+            { label: 'Changelog', to: '/changelog' },
             {
               label: 'GitHub',
               href: 'https://github.com/ledgerlink-ai/docs',

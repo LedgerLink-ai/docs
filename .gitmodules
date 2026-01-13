@@ -2,3 +2,30 @@
 	path = external_docs/rails_services
 	url = git@github.com:LedgerLink-ai/rails_services.git
 	branch = docs/public_docs
+[submodule "external_docs/link_core"]
+	path = external_docs/link_core
+	url = https://github.com/LedgerLink-ai/link_core.git
+[submodule "external_docs/link/link_core"]
+	path = external_docs/link/link_core
+	url = https://github.com/LedgerLink-ai/link_core.git
+[submodule "external_docs/link/link_account_manager"]
+	path = external_docs/link/link_account_manager
+	url = https://github.com/LedgerLink-ai/link_wallet_manager.git
+[submodule "external_docs/link/link_tracker"]
+	path = external_docs/link/link_tracker
+	url = https://github.com/LedgerLink-ai/link_tracker.git
+[submodule "external_docs/link/link_blockchain_listener"]
+	path = external_docs/link/link_blockchain_listener
+	url = https://github.com/LedgerLink-ai/link_blockchain_listener.git
+[submodule "external_docs/link/link_enterprise_wallet"]
+	path = external_docs/link/link_enterprise_wallet
+	url = https://github.com/LedgerLink-ai/link_client_enterprise_wallet.git
+[submodule "external_docs/link/link_quote"]
+	path = external_docs/link/link_quote
+	url = https://github.com/LedgerLink-ai/link_quote.git
+[submodule "external_docs/link/link_router"]
+	path = external_docs/link/link_router
+	url = https://github.com/LedgerLink-ai/link_router.git
+[submodule "external_docs/link/link_verify"]
+	path = external_docs/link/link_verify
+	url = https://github.com/LedgerLink-ai/link_verify.git
