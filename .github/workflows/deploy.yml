@@ -65,6 +65,8 @@ jobs:
               exit 1
             fi
           fi
+          echo "=== Checking docs/link/services symlink ==="
+          ls -la docs/link/
 
       - uses: actions/setup-node@v4
         with:
