@@ -4,49 +4,40 @@ sidebar_position: 2
 
 # The Link
 
-A flexible integration fabric connecting digital assets with legacy systems.
+The Link is the public integration layer for LedgerLink services.
 
 ## Overview
 
-The Link serves as the critical bridge between modern digital asset infrastructure and traditional financial systems. This flexible integration fabric is specifically designed to seamlessly connect digital assets with legacy core banking systems, whether they're on-premise or cloud-native deployments.
+Use The Link when you need application-facing APIs for:
 
-## Key Features
+- balances, assets, limits, and transactions
+- quote retrieval and provider mappings
+- customer, participant, account, and wallet operations
+- routing and message orchestration
+- sanctions screening and webhook-driven verification
+- operational activity tracking
 
-- **Legacy System Integration**: Connect with core banking systems built on older technologies
-- **Flexible Architecture**: Adaptable to various system configurations and requirements
-- **Real-time Data Sync**: Bidirectional data flow between digital and traditional systems
-- **API-First Design**: Modern REST and GraphQL APIs for easy integration
-- **Custom Middleware**: Tailored integration solutions for unique requirements
+## Public Service Catalog
 
-## Integration Capabilities
+The Link public documentation is grouped by service:
 
-### Core Banking Systems
-- **Mainframe Integration**: Connect with COBOL-based legacy systems
-- **Modern Core Systems**: Integration with contemporary banking platforms
-- **Batch Processing**: Support for both real-time and batch processing workflows
+- [Core](./services/core/)
+- [Account Manager](./services/account_manager/)
+- [Quote](./services/quote/)
+- [Router](./services/router/)
+- [Tracker](./services/tracker/)
+- [Verify](./services/verify/)
 
-### Digital Asset Networks
-- **Blockchain Connectivity**: Direct integration with major blockchain networks
-- **Multi-Protocol Support**: Ethereum, Bitcoin, Solana, and other networks
-- **Smart Contract Integration**: Automated contract execution and monitoring
+Open the full [Link Services catalog](./services/) to compare services and jump directly into API references.
 
-## Documentation
+## Navigation Pattern
 
-### 🚀 Link Services
-Complete API documentation and integration guides for the Link services suite.
+Each public service area follows the same structure:
 
-**Includes:**
-- **[Getting Started Guides](./services/)** – Pick a service and start integrating
-- **[Service API References](./services/)** – Explore endpoints per service
-- **[Error Handling](./services/)** – Common patterns and responses
-- **[FAQ](./services/)** – Answers to frequent questions
+- overview and endpoint map
+- API reference pages grouped by resource or workflow
+- error-handling page for externally observable failures
 
-Explore the full catalog in [Link Services](./services/), including Core, Account Manager, Blockchain Listener, Quote, Router, Tracker, and Verify.
+## Authentication
 
-## Support & Resources
-
-For immediate integration support or to discuss your specific requirements, please [reach out to our technical team](https://ledgerlink.ai/contact).
-
----
-
-*Last updated: January 6, 2026*
+Use the API key and base URL configured for your environment. Public examples use relative paths rather than fixed hostnames.

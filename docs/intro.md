@@ -2,67 +2,51 @@
 sidebar_position: 1
 ---
 
-# LedgerLink.ai Documentation
+# LedgerLink Developer Documentation
 
-Welcome to the LedgerLink.ai developer documentation portal.
+This portal is organized around the public LedgerLink platform areas and the APIs that external teams integrate with.
 
-## Platform Overview
+## Start Here
 
-LedgerLink is a comprehensive solution for integrating digital assets into traditional financial, core banking, and back-office systems. Our platform is designed with scalability, security, and compliance at the forefront, suitable for the demands of financial institutions, corporate treasuries, market makers, and asset managers.
+If you are building against LedgerLink APIs, begin with [The Link](./link/) for service-level API documentation or [SDK](./sdk/) if you want a JavaScript and TypeScript client.
 
-## Core Components
-
-Our platform consists of three main components, each designed to address specific aspects of digital asset integration:
-
-### The Rails
-Secure, scalable infrastructure to manage and transact digital assets including stablecoins, tokenized securities, and cryptocurrencies.
-
-[Explore The Rails →](./rails/)
-
-**Key Features:**
-- Enterprise-grade security and encryption
-- Multi-asset support and management
-- Regulatory compliance built-in
-- Real-time monitoring and alerting
+## Platform Areas
 
 ### The Link
-A flexible integration fabric connecting digital assets with legacy systems, tailored to seamlessly integrate with your existing infrastructure.
 
-[Explore The Link →](./link/)
+Public service APIs for external integrations.
 
-**Key Features:**
-- Legacy system connectivity
-- Modern API-first architecture
-- Custom middleware solutions
-- Real-time data synchronization
+- [Service catalog](./link/services/)
+- Core, Account Manager, Quote, Router, Tracker, and Verify public references
+
+### The Rails
+
+Infrastructure and gateway documentation for Rails capabilities.
+
+- [Rails overview](./rails/)
+- [Gate](./rails/gate.md)
 
 ### The Engine
-Real-time analytics and settlement engine for 24/7 asset movement with AI-powered tools for liquidity management and risk assessment.
 
-[Explore The Engine →](./engine/)
+Analytics and settlement documentation for Engine capabilities.
 
-**Key Features:**
-- Real-time settlement processing
-- AI-powered analytics and forecasting
-- 24/7 operational capabilities
-- Advanced risk management
+- [Engine overview](./engine/)
 
-## Getting Started
+## Developer Resources
 
-Choose the component that best fits your integration needs:
+### SDK
 
-- **Financial Institutions**: Start with [The Rails](./rails/) for secure digital asset infrastructure
-- **System Integrators**: Begin with [The Link](./link/) for legacy system connectivity  
-- **Analytics & Trading Platforms**: Explore [The Engine](./engine/) for real-time processing and analytics
+JavaScript and TypeScript client documentation for Link integrations.
 
-## Support & Contact
+- [SDK overview](./sdk/)
+- Accounts, Assets, Customers, Quote, Transactions, and Tracker scope references
 
-For immediate assistance or to discuss your specific requirements:
+## Recommended Navigation
 
-- **Technical Support**: [Contact our development team](https://ledgerlink.ai/contact)
-- **Business Inquiries**: [Speak with our solutions team](https://ledgerlink.ai/contact)
-- **Partnership Opportunities**: [Explore integration partnerships](https://ledgerlink.ai/contact)
+1. Open the relevant product area.
+2. Go to the service catalog, service overview page, or SDK section.
+3. Move into the API reference, SDK scope docs, or error-handling pages for the integration path you are using.
 
----
+## Support
 
-*Stay tuned for regular documentation updates as we continue to expand our developer resources.*
+For access, onboarding, or environment-specific questions, contact [LedgerLink](https://ledgerlink.ai/contact).

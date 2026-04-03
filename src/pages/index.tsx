@@ -1,245 +1,181 @@
 import type {ReactNode} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import styles from './index.module.css';
+
+const platformAreas = [
+  {
+    eyebrow: 'Stable infrastructure',
+    title: 'Rails',
+    description:
+      'Infrastructure and gateway capabilities for digital-asset operations.',
+    href: '/docs/rails',
+  },
+  {
+    eyebrow: 'Primary integration path',
+    title: 'Link',
+    description:
+      'Public API services for balances, quotes, routing, verification, wallets, and activity tracking.',
+    href: '/docs/link/services',
+    featured: true,
+  },
+  {
+    eyebrow: 'Analytics and settlement',
+    title: 'Engine',
+    description:
+      'Analytics and settlement concepts for round-the-clock asset movement.',
+    href: '/docs/engine',
+  },
+];
+
+const developerResources = [
+  {
+    eyebrow: 'Primary resource',
+    title: 'SDK',
+    description:
+      'Use the JavaScript and TypeScript SDK when you want typed scope methods for accounts, assets, customers, quotes, transactions, and tracker workflows.',
+    href: '/docs/sdk',
+    featured: true,
+  },
+  {
+    eyebrow: 'Portal overview',
+    title: 'Platform Overview',
+    description:
+      'Understand how Rails, Link, and Engine fit together before choosing an integration path.',
+    href: '/docs/intro',
+  },
+  {
+    eyebrow: 'Product updates',
+    title: 'Changelog',
+    description:
+      'Review recent documentation and platform updates that affect integrators.',
+    href: '/blog',
+  },
+];
+
+const linkServices = [
+  {
+    title: 'Core',
+    description: 'Transactions, balances, assets, limits, and ledger-backed workflows.',
+    href: '/docs/link/services/core',
+  },
+  {
+    title: 'Account Manager',
+    description: 'Participants, customers, accounts, and wallet lifecycle APIs.',
+    href: '/docs/link/services/account_manager',
+  },
+  {
+    title: 'Quote',
+    description: 'Rates, provider mappings, assets, categories, and quote settings.',
+    href: '/docs/link/services/quote',
+  },
+  {
+    title: 'Router',
+    description: 'Account, customer, and message-routing APIs.',
+    href: '/docs/link/services/router',
+  },
+  {
+    title: 'Verify',
+    description: 'Sanctions screening APIs for compliance-sensitive flows.',
+    href: '/docs/link/services/verify',
+  },
+  {
+    title: 'Tracker',
+    description: 'Operational log-message ingestion and query APIs.',
+    href: '/docs/link/services/tracker',
+  },
+];
 
 export default function Home(): ReactNode {
   return (
-    <Layout 
-      title="Developer Documentation" 
-      description="Ledgerlink.ai Developer Documentation - Bridging Digital Assets & Institutional Finance"
+    <Layout
+      title="Developer Documentation"
+      description="LedgerLink developer documentation for public APIs and platform integration."
     >
-      <main>
-        {/* Hero Section */}
-        <div style={{ 
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-          color: 'white',
-          padding: '4rem 2rem',
-          textAlign: 'center'
-        }}>
-          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <h1 style={{ 
-              fontSize: '3rem', 
-              marginBottom: '1rem',
-              fontWeight: 'bold'
-            }}>
-              Ledgerlink Developer Documentation
-            </h1>
-            <p style={{ 
-              fontSize: '1.25rem', 
-              marginBottom: '2rem',
-              opacity: 0.9
-            }}>
-              Bridging Digital Assets & Institutional Finance
+      <main className={styles.page}>
+        <section className={styles.hero}>
+          <div className={styles.heroInner}>
+            <p className={styles.eyebrow}>LedgerLink Developer Documentation</p>
+            <h1 className={styles.heroTitle}>Build on the LedgerLink platform</h1>
+            <p className={styles.heroText}>
+              Explore platform documentation for Rails, Link, and Engine, then
+              use the SDK or service-level API references to implement your
+              integration.
             </p>
-            <p style={{ 
-              fontSize: '1.1rem', 
-              marginBottom: '2rem',
-              lineHeight: '1.6'
-            }}>
-              Build secure, compliant solutions for tokenization and blockchain integration. 
-              Enable stablecoin payments and smart contracts for financial institutions.
-            </p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link
-                to="/docs/intro"
-                style={{
-                  backgroundColor: 'white',
-                  color: '#667eea',
-                  padding: '0.75rem 1.5rem',
-                  borderRadius: '6px',
-                  textDecoration: 'none',
-                  fontWeight: 'bold',
-                  transition: 'all 0.2s'
-                }}
-              >
-                Get Started
+            <div className={styles.heroActions}>
+              <Link className={styles.primaryAction} to="/docs/link/services">
+                Explore Link Services
               </Link>
-              <Link
-                to="/blog"
-                style={{
-                  backgroundColor: 'transparent',
-                  color: 'white',
-                  padding: '0.75rem 1.5rem',
-                  border: '2px solid white',
-                  borderRadius: '6px',
-                  textDecoration: 'none',
-                  fontWeight: 'bold',
-                  transition: 'all 0.2s'
-                }}
-              >
-                Latest Updates
+              <Link className={styles.secondaryAction} to="/docs/sdk">
+                Open SDK Docs
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Platform Overview */}
-        <div style={{ padding: '4rem 2rem', backgroundColor: '#f8f9fa' }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem', color: '#000000' }}>
-              Platform Overview
-            </h2>
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-              gap: '2rem' 
-            }}>
-              <div style={{ 
-                backgroundColor: 'white', 
-                padding: '2rem', 
-                borderRadius: '8px',
-                boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>The Rails</h3>
-                <p style={{ color: '#000000' }}>Secure, scalable infrastructure to manage and transact digital assets including stablecoins, tokenized securities, and cryptocurrencies.</p>
-              </div>
-              <div style={{ 
-                backgroundColor: 'white', 
-                padding: '2rem', 
-                borderRadius: '8px',
-                boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>The Link</h3>
-                <p style={{ color: '#000000' }}>A flexible integration fabric connecting digital assets with legacy systems, tailored to seamlessly integrate with your existing infrastructure.</p>
-              </div>
-              <div style={{ 
-                backgroundColor: 'white', 
-                padding: '2rem', 
-                borderRadius: '8px',
-                boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>The Engine</h3>
-                <p style={{ color: '#000000' }}>Real-time analytics and settlement engine for 24/7 asset movement with AI-powered tools for liquidity management and risk assessment.</p>
-              </div>
-            </div>
+        <section className={styles.section}>
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionEyebrow}>Platform Areas</p>
+            <h2>Choose the part of the platform you need</h2>
           </div>
-        </div>
-
-        {/* Key Features */}
-        <div style={{ padding: '4rem 2rem' }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem' }}>
-              Key Features
-            </h2>
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-              gap: '2rem' 
-            }}>
-              <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>🏦 Financial Institution Ready</h3>
-                <p>Access stablecoins for instant transfers, offer crypto services, and enable smart contracts with regulatory compliance built-in.</p>
-              </div>
-              <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>🔗 Blockchain Developer Friendly</h3>
-                <p>Connect your blockchain, dApp, or DAO directly to the institutional financial system through our integration layer.</p>
-              </div>
-              <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>🛡️ Security & Compliance</h3>
-                <p>Built with compliance across U.S. and E.U. jurisdictions, supporting ISO 20022 standards and AML/KYC protocols.</p>
-              </div>
-              <div style={{ textAlign: 'center', padding: '1rem' }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>⚡ Real-time Processing</h3>
-                <p>24/7 asset movement capabilities with real-time analytics, settlement, and around-the-clock operational support.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Use Cases */}
-        <div style={{ padding: '4rem 2rem', backgroundColor: '#f8f9fa' }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem', color: '#000000' }}>
-              Use Cases
-            </h2>
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
-              gap: '2rem' 
-            }}>
-              <div style={{ 
-                backgroundColor: 'white', 
-                padding: '2rem', 
-                borderRadius: '8px',
-                boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>💰 Stablecoins</h3>
-                <p style={{ color: '#000000' }}>Enable instant international transfer and settlement with minimal costs, increasing margins and global efficiency for financial institutions.</p>
-              </div>
-              <div style={{ 
-                backgroundColor: 'white', 
-                padding: '2rem', 
-                borderRadius: '8px',
-                boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>₿ Cryptocurrency Services</h3>
-                <p style={{ color: '#000000' }}>Offer clients Bitcoin, Ethereum, Solana, USDC, smart contracts & more within institutional bank accounts.</p>
-              </div>
-              <div style={{ 
-                backgroundColor: 'white', 
-                padding: '2rem', 
-                borderRadius: '8px',
-                boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ color: '#2563eb', marginBottom: '1rem' }}>👩‍💻 Developer Integration</h3>
-                <p style={{ color: '#000000' }}>Connect your blockchain, DAO, or dApp to the institutional financial system, opening access to participating firms on our platform.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Getting Started */}
-        <div style={{ padding: '4rem 2rem' }}>
-          <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <h2 style={{ marginBottom: '2rem', fontSize: '2.5rem' }}>
-              Ready to Get Started?
-            </h2>
-            <p style={{ 
-              fontSize: '1.1rem', 
-              marginBottom: '2rem',
-              lineHeight: '1.6',
-              color: '#666'
-            }}>
-              Join leading financial institutions in adopting secure, compliant digital asset solutions. 
-              Our comprehensive documentation will guide you through integration and implementation.
-            </p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className={styles.areaGrid}>
+            {platformAreas.map((area) => (
               <Link
-                to="/docs/intro"
-                style={{
-                  backgroundColor: '#667eea',
-                  color: 'white',
-                  padding: '0.75rem 2rem',
-                  borderRadius: '6px',
-                  textDecoration: 'none',
-                  fontWeight: 'bold',
-                  fontSize: '1.1rem',
-                  transition: 'all 0.2s'
-                }}
+                key={area.title}
+                className={area.featured ? styles.areaCardFeatured : styles.areaCard}
+                to={area.href}
               >
-                View Documentation
+                <p className={styles.cardEyebrow}>{area.eyebrow}</p>
+                <h3>{area.title}</h3>
+                <p>{area.description}</p>
               </Link>
-              <a
-                href="https://ledgerlink.ai/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  backgroundColor: 'transparent',
-                  color: '#667eea',
-                  padding: '0.75rem 2rem',
-                  border: '2px solid #667eea',
-                  borderRadius: '6px',
-                  textDecoration: 'none',
-                  fontWeight: 'bold',
-                  fontSize: '1.1rem',
-                  transition: 'all 0.2s'
-                }}
-              >
-                Contact Our Team
-              </a>
-            </div>
+            ))}
           </div>
-        </div>
+        </section>
+
+        <section className={styles.sectionAlt}>
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionEyebrow}>Developer Resources</p>
+            <h2>Start with the integration tooling and shared guidance</h2>
+            <p className={styles.sectionText}>
+              Use the SDK for typed client access, the platform overview for
+              orientation, and the changelog when you need release context.
+            </p>
+          </div>
+          <div className={styles.quickGrid}>
+            {developerResources.map((resource) => (
+              <Link
+                key={resource.title}
+                className={resource.featured ? styles.quickCardFeatured : styles.quickCard}
+                to={resource.href}
+              >
+                <p className={styles.cardEyebrow}>{resource.eyebrow}</p>
+                <h3>{resource.title}</h3>
+                <p>{resource.description}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.sectionAlt}>
+          <div className={styles.sectionHeader}>
+            <p className={styles.sectionEyebrow}>Link Services</p>
+            <h2>Direct entry points for public service APIs</h2>
+            <p className={styles.sectionText}>
+              The Link area is the main integration surface for external developers.
+              Each service page leads into its public API reference and error model.
+            </p>
+          </div>
+          <div className={styles.serviceGrid}>
+            {linkServices.map((service) => (
+              <Link key={service.title} className={styles.serviceCard} to={service.href}>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <span>View service docs</span>
+              </Link>
+            ))}
+          </div>
+        </section>
       </main>
     </Layout>
   );
