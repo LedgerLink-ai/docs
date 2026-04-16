@@ -100,19 +100,27 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Ledgerlink.ai Developer',
+      title: 'LedgerLink Docs',
       logo: {
         alt: 'LedgerLink.ai Logo',
         src: 'img/ledgerlink-logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs/intro',
+          label: 'Docs',
           position: 'left',
-          label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          to: '/docs/link/services',
+          label: 'Link APIs',
+          position: 'left',
+        },
+        {
+          to: '/docs/sdk',
+          label: 'SDK',
+          position: 'left',
+        },
         {to: '/changelog', label: 'Changelog', position: 'left'},
         {
           href: 'https://github.com/ledgerlink-ai/docs',
@@ -125,43 +133,50 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Products',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/docs/intro',
+              label: 'The Rails',
+              to: '/docs/rails',
+            },
+            {
+              label: 'The Link',
+              to: '/docs/link/services',
+            },
+            {
+              label: 'The Engine',
+              to: '/docs/engine',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Resources',
           items: [
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/docusaurus',
-            // },
             {
-              label: 'LinkedIn',
-              href: 'https://linkedin.com/company/ledgerlink-ai',
+              label: 'Documentation',
+              to: '/docs/intro',
             },
             {
-              label: 'X',
-              href: 'https://twitter.com/ledgerlinkai',
+              label: 'SDK',
+              to: '/docs/sdk',
+            },
+            {
+              label: 'Changelog',
+              to: '/changelog',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Company',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Website',
+              href: 'https://ledgerlink.ai',
             },
-            { label: 'Changelog', to: '/changelog' },
+            {
+              label: 'Contact',
+              href: 'https://ledgerlink.ai/contact',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/ledgerlink-ai/docs',
