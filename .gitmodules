@@ -29,3 +29,6 @@
 [submodule "external_docs/link/link_verify"]
 	path = external_docs/link/link_verify
 	url = git@github.com:LedgerLink-ai/link_verify.git
+[submodule "link-sdk"]
+	path = link-sdk
+	url = git@github.com:LedgerLink-ai/link-sdk.git
