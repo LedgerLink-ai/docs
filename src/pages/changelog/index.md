@@ -30,3 +30,17 @@ This changelog documents notable changes to LedgerLink products and APIs.
 - Blockchain Network Rebalancing
 - AML integration ready
 - Quote smart price validation
+
+<br />
+
+## Boston v1.2.0 ##
+📅 **2025-03-31**
+- Convert Fiat to Stablecoin (USDC)
+- Portfolio Accounts
+    - Ethereum
+    - Solana
+    - Bitcoin
+- Transaction Limits
+- Dashboard UX Revamp
+- Integration with CoinGecko
+- Major performance improvements on transaction settlement
